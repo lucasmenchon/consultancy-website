@@ -11,18 +11,18 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/app',
-    name: 'app',
+    path: '/about',
+    name: 'sobre',
     component: AppView
   },
   {
-    path: '/docs',
-    name: 'docs',
+    path: '/services',
+    name: 'serviços',
     component: DocsView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/contact',
+    name: 'contato',
     component: AboutView
   }
 ]

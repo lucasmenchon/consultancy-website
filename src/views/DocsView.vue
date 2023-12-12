@@ -5,9 +5,5 @@
 </template>
 
 <style scoped>
-
-  .container {
-    margin-top: 20%;
-  }
-
+  
 </style>

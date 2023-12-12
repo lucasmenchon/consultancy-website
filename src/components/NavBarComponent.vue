@@ -1,38 +1,62 @@
 ﻿<template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand">
-            <img class="logo" src="../assets/logo.png">
-            Logo
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item me-4" v-for="route in routes" :key="route.path">
-                <router-link class="nav-link" :to="route.path">{{ capitalizeFirstLetter(route.name) }}</router-link>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg" :style="{ backgroundColor: navBackgroundColor }">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img class="logo" src="../assets/logo.png">            
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4" v-for="route in routes" :key="route.path">
+                        <router-link class="nav-link" :to="route.path" :class="{ 'active': isActive(route) }">{{ capitalizeFirstLetter(route.name) }}</router-link>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
 </template>
 <script>
 export default {
     data() {
         return {
-            routes: this.$router.getRoutes()
+            routes: this.$router.getRoutes(),
+            activeRoute: ''
+        }
+    },
+    computed: {
+        navBackgroundColor() {
+            return '#013878'; // Cor de fundo da barra de navegação
         }
     },
     methods: {
         capitalizeFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1)
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        },
+        isActive(route) {
+            return this.activeRoute === route.path;
         }
+    },
+    watch: {
+        $route(newVal) {
+            this.activeRoute = newVal.path;
+        }
+    },
+    mounted() {
+        this.activeRoute = this.$route.path;
     }
 }
 </script>
 <style scoped>
+    .navbar a{
+        color: #fff;
+    }
+
+    .navbar .nav-link.active {
+        color: #EE1B2E;
+    }
+
     .logo{
         height: 50px;
         width: auto;
