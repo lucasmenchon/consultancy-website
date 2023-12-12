@@ -1,6 +1,6 @@
 <template>
   <header>
-    <NavBarComponent></NavBarComponent>
+    <NavbarComponent></NavbarComponent>
   </header>
   <main>
     <router-view v-slot="{ Component }">
@@ -48,12 +48,12 @@ nav a.router-link-exact-active {
 </style>
 
 <script>
-import NavBarComponent from '@/components/NavBarComponent.vue'
+import NavbarComponent from '@/components/NavbarComponent'
 
 export default {
   name: 'App',
   components: {
-    NavBarComponent
+    NavbarComponent
   }
 }
 </script>
