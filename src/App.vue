@@ -1,27 +1,38 @@
 <template>
-  <header>
-    <NavbarComponent></NavbarComponent>
-  </header>
-  <main>
+   <HeaderComponent />
+  <main class="main">   
     <router-view v-slot="{ Component }">
       <transition name="slide-fade">
-        <component :is="Component"/>
+        <component :is="Component" />
       </transition>
     </router-view>
   </main>
+  <h1 class="text-center">Em desenvolvimento...</h1> 
 </template>
 
+<script>
+import HeaderComponent from '@/components/HeaderComponent.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HeaderComponent
+  }
+}
+
+</script>
 <style>
 #app {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;  
+  text-align: center;
 }
 
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
+
 .slide-fade-leave-active {
   transform-origin: top;
   transform: translateY(-100%);
@@ -34,14 +45,3 @@
   opacity: 0;
 }
 </style>
-
-<script>
-import NavbarComponent from '@/components/NavbarComponent'
-
-export default {
-  name: 'App',
-  components: {
-    NavbarComponent
-  }
-}
-</script>
