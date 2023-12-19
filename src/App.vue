@@ -7,16 +7,19 @@
       </transition>
     </router-view>
   </main>
-  <h1 class="text-center">Em desenvolvimento...</h1> 
+  <h1 class="text-center">Em desenvolvimento...</h1>
+  <FooterComponent />
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   }
 }
 

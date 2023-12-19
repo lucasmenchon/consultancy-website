@@ -4,7 +4,7 @@
             <a class="navbar-brand me-auto">
                 <img class="logo" src="../assets/logo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" style="text-decoration: none;"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,7 +49,10 @@ export default {
 
 <style scoped>
 .navbar {
-    background-color: transparent;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 0;
 }
 
 .navbar a {
