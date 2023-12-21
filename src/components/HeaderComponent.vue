@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header class="customHeader">
-      <NavbarComponent></NavbarComponent>
+    <header>
+      <!-- <NavbarComponent></NavbarComponent> -->
     </header>
     <div class="imageContainer">
       <img src="../assets/img-header.jpg" alt="bannerImage" class="bannerImage">
@@ -11,21 +11,16 @@
 </template>
   
 <script>
-import NavbarComponent from '@/components/NavbarComponent.vue'
+//import NavbarComponent from '@/components/NavbarComponent.vue'
 
 export default {
   components: {
-    NavbarComponent
+   // NavbarComponent
   }
 }
 </script>
       
 <style scoped>
-.customHeader {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-}
 
 .imageContainer {
   position: relative;

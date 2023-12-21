@@ -1,4 +1,5 @@
 <template>
+  <NavbarComponent />
    <HeaderComponent />
   <main class="main">   
     <router-view v-slot="{ Component }">
@@ -6,20 +7,21 @@
         <component :is="Component" />
       </transition>
     </router-view>
-  </main>
-  <h1 class="text-center">Em desenvolvimento...</h1>
+  </main> 
   <FooterComponent />
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import NavbarComponent from '@/components/NavbarComponent.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   }
 }
 

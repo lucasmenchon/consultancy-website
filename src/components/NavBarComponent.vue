@@ -1,13 +1,17 @@
 ﻿<template>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto">
+            <a class="navbar-brand">
                 <img class="logo" src="../assets/logo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" style="text-decoration: none;"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" @click="toggleMenu">
+                <i :class="iconClasses"></i>
             </button>
+            <!-- <button class="navbar-toggler" type="button" @click="toggleMenu" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i :class="iconClasses"></i>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-4" v-for="route in routes" :key="route.path">
@@ -19,13 +23,31 @@
         </div>
     </nav>
 </template>
-
+<!-- <span class="navbar-toggler-icon"></span> -->
 <script>
 export default {
     data() {
         return {
             routes: this.$router.getRoutes(),
-            activeRoute: ''
+            activeRoute: '',
+            isMenuOpen: false,
+            isAnimating: false
+        }
+    },
+    computed: {
+        iconClasses() {
+            return {
+                'fas': true,
+                'fa-times': this.isMenuOpen == true,
+                'fa-bars': this.isMenuOpen == false,
+                'icon': true,
+                'animating': this.isAnimating
+            };
+        }
+    },
+    watch: {
+        $route(newVal) {
+            this.activeRoute = newVal.path;
         }
     },
     methods: {
@@ -34,11 +56,9 @@ export default {
         },
         isActive(route) {
             return this.activeRoute === route.path;
-        }
-    },
-    watch: {
-        $route(newVal) {
-            this.activeRoute = newVal.path;
+        },
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
         }
     },
     mounted() {
@@ -51,7 +71,9 @@ export default {
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    position: fixed;
     width: 100%;
+    z-index: 1000;
     padding: 0;
 }
 
@@ -63,8 +85,74 @@ export default {
     color: #EE1B2E;
 }
 
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled):focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*editando icone*/
+
+.navbar-toggler .icon {
+    font-size: 30px;
+    /* Tamanho do ícone */
+    transition: transform 0.3s ease;
+    /* Transição de transformação */
+}
+
+/* Animação para transformar o ícone do menu em 'X' */
+@keyframes menuToX {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* Animação para transformar 'X' de volta para o ícone do menu */
+@keyframes xToMenu {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* Adiciona a animação dependendo do estado do menu */
+.fas.fa-bars {
+    animation: xToMenu 0.3s ease forwards;
+}
+
+.fas.fa-times {
+    animation: menuToX 0.3s ease forwards;
+}
+
+
+
+/*editando icone*/
+
+
+
 .logo {
-    height: 60px;
+    height: 55px;
     width: auto;
 }
 </style>

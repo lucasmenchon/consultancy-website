@@ -1,8 +1,8 @@
 <template>
-    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <hr>
     <div class="container-fluid" style="padding: 0;">
         <!-- Footer -->
-        <footer class="text-center text-lg-start text-white" style="background-color: black">
+        <footer class="text-center text-lg-start" style="background-color: white">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
@@ -13,7 +13,7 @@
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">
                                 <a class="navbar-brand me-auto">
-                                    <img class="logo" src="../assets/logo.png" style="width: 250px; height: auto;">
+                                    <img class="logo" src="../assets/logo.png" style="width: 180px; height: auto;">
                                 </a>
                             </h6>
                             <p>
@@ -27,18 +27,12 @@
 
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Serviços (opção ??)</h6>
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Informações</h6>
                             <p>
-                                <a class="text-white">1</a>
+                                <a>Sobre</a>
                             </p>
                             <p>
-                                <a class="text-white">2</a>
-                            </p>
-                            <p>
-                                <a class="text-white">3</a>
-                            </p>
-                            <p>
-                                <a class="text-white">4</a>
+                                <a>Contato</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -81,9 +75,6 @@
                             <!-- Linkedin -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
                                 role="button"><i class="fab fa-linkedin-in"></i></a>
-                            <!-- Github -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
-                                role="button"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <!--Grid row-->
@@ -93,9 +84,8 @@
             <!-- Grid container -->
             <hr style="margin: 0;">
             <!-- Copyright -->
-            <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2023 Copyright
-                <a class="text-white" href=""></a>
+            <div class="text-center p-1">
+                © Amariconelli. Todos os direitos reservados                
             </div>
             <!-- Copyright -->
         </footer>
