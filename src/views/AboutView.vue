@@ -1,9 +1,69 @@
 <template>
-  <div class="container">
-    
+  <br />
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="text-center">
+          <h3 class="mb-4">Sobre</h3>
+          <p>
+            Se você é um imigrante nos Estados Unidos ou pretende residir na Americana, existem muitos tipos diferentes de
+            vistos, e o processo de mudança de status pode ser complicado. Felizmente, existem organizações que podem
+            fornecer assistência. A Amariconelli pode ajudá-lo a entender os diferentes tipos de vistos e os requisitos
+            para cada um. Também podemos ajudá-lo a preencher a documentação necessária e arquivá-la nas agências
+            governamentais apropriadas. Com a nossa ajuda, você pode garantir que seu status de imigração seja atualizado
+            corretamente e evitar atrasos ou complicações. Mudança de status é um termo usado pelos Serviços de Cidadania
+            e Imigração dos Estados Unidos (USCIS) para se referir ao processo de mudança de uma categoria de visto de
+            não-imigrante para outra. As razões mais comuns para “mudança de status” são casamento ou emprego. A mudança
+            de status pode ser registrada online ou por correio, e o processo geralmente leva vários meses. Existem
+            diferentes tipos de Mudança de Status, e cada tipo tem seu próprio conjunto de requisitos. Por exemplo, a
+            “Mudança de Status” do visto de turista B-2 para o visto de estudante F-1 exige que o requerente apresente
+            comprovação de suporte financeiro, comprovante de admissão em uma escola certificada pelo SEVP e um Formulário
+            I-20 preenchido. A mudança de status pode ser um processo complexo e é importante consultar um advogado de
+            imigração antes de preencher qualquer documento.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-10">
+        <div class="text-center">
+          <h3>Tipos de petições mais comuns:</h3>
+          <ul>
+            <li>Petição para noivo(a) estrangeiro(a)</li>
+            <li>Petição para parente estrangeiro</li>
+            <li>Pedido de Documento de Viagem</li>
+            <li>Petição de Imigrante para Trabalhadores Estrangeiros</li>
+            <li>Requerimento para Registro de Residência Permanente ou Ajuste de Status</li>
+            <li>Pedido de Extensão/Mudança de Status de Não Imigrante</li>
+            <li>Pedido de Asilo e Retenção de Remoção</li>
+            <li>Pedido de Autorização de Trabalho</li>
+            <li>Pedido de Naturalização</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
-  
+/* Estilo para justificar o texto */
+p {
+  text-align: justify;
+}
+
+/* Centralizar textos na lista */
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
 </style>
+
+<script>
+
+export default {
+  name: 'AboutView',
+  components: {
+
+  }
+}
+</script>

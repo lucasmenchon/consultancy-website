@@ -22,50 +22,13 @@
             </div>
         </div>
     </nav>
+    <div class="position-fixed top-50 end-0 translate-middle-y" style="z-index: 9999; margin-right: 5px; margin-top: 60px;">
+        <a href="#">
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_dyf5lscb.json" speed="1.20"
+                style="width: 38px; height: 40px;" loop autoplay background="transparent"></lottie-player>
+        </a>
+    </div>
 </template>
-<!-- <span class="navbar-toggler-icon"></span> -->
-<script>
-export default {
-    data() {
-        return {
-            routes: this.$router.getRoutes(),
-            activeRoute: '',
-            isMenuOpen: false,
-            isAnimating: false
-        }
-    },
-    computed: {
-        iconClasses() {
-            return {
-                'fas': true,
-                'fa-times': this.isMenuOpen == true,
-                'fa-bars': this.isMenuOpen == false,
-                'icon': true,
-                'animating': this.isAnimating
-            };
-        }
-    },
-    watch: {
-        $route(newVal) {
-            this.activeRoute = newVal.path;
-        }
-    },
-    methods: {
-        capitalizeFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1);
-        },
-        isActive(route) {
-            return this.activeRoute === route.path;
-        },
-        toggleMenu() {
-            this.isMenuOpen = !this.isMenuOpen;
-        }
-    },
-    mounted() {
-        this.activeRoute = this.$route.path;
-    }
-}
-</script>
 
 <style scoped>
 .navbar {
@@ -83,6 +46,14 @@ export default {
 
 .navbar .nav-link.active {
     color: #EE1B2E;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .navbar-toggler {
@@ -145,14 +116,52 @@ export default {
     animation: menuToX 0.3s ease forwards;
 }
 
-
-
-/*editando icone*/
-
-
-
 .logo {
-    height: 55px;
+    height: 50px;
     width: auto;
 }
 </style>
+
+<script>
+export default {
+    data() {
+        return {
+            routes: this.$router.getRoutes(),
+            activeRoute: '',
+            isMenuOpen: false,
+            isAnimating: false
+        }
+    },
+    computed: {
+        iconClasses() {
+            return {
+                'fas': true,
+                'fa-times': this.isMenuOpen == true,
+                'fa-bars': this.isMenuOpen == false,
+                'icon': true,
+                'animating': this.isAnimating
+            };
+        }
+    },
+    watch: {
+        $route(newVal) {
+            this.activeRoute = newVal.path;
+        }
+    },
+    methods: {
+        capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        },
+        isActive(route) {
+            return this.activeRoute === route.path;
+        },
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
+        }
+    },
+    mounted() {
+        this.activeRoute = this.$route.path;
+    }
+}
+</script>
+

@@ -1,7 +1,7 @@
 <template>
+  <BannerImageComponent />
   <br />
   <div class="container">
-
     <div class="row">
       <div class="col">
         <h3 class="text-center">Na Amariconelli</h3>
@@ -149,13 +149,12 @@
 </template>
 
 <script>
+import BannerImageComponent from '@/components/BannerImageComponent.vue'
+
 export default {
   name: 'HomeView',
   components: {
+    BannerImageComponent
   }
 }
 </script>
-
-<style scoped>
-
-</style>
