@@ -15,8 +15,7 @@
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  min-height: 100vh;  
+  text-align: center;  
 }
 
 html, body {

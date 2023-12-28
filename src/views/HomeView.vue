@@ -17,7 +17,7 @@
         <!-- card turista/negocios -->
         <div class="col-md-4 mb-4">
           <div class="card" style="width: auto; height: 100%;">
-            <img src="../assets/turismo.jpg" class="card-img-top" alt="">
+            <img src="../assets/tourism.jpg" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">B1-B2 - Turista/Negócios</h5>
               <p class="card-text" style="text-align: center; font-size: 14px;">
@@ -33,7 +33,7 @@
         <!-- Card 2 - Estudante -->
         <div class="col-md-4 mb-4">
           <div class="card" style="width: auto; height: 100%;">
-            <img src="../assets/estudante.jpg" class="card-img-top" alt="">
+            <img src="../assets/student.jpg" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">F1/M1 - Estudante (Curso de Inglês - acadêmico ou vocacionais)</h5>
               <p class="card-text" style="text-align: center; font-size: 14px;">

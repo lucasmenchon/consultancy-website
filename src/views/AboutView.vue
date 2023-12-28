@@ -5,7 +5,7 @@
       <div class="col-md-10">
         <div class="text-center">
           <h3 class="mb-4">Sobre</h3>
-          <p>
+          <p style="line-height: 2;">
             Se você é um imigrante nos Estados Unidos ou pretende residir na Americana, existem muitos tipos diferentes de
             vistos, e o processo de mudança de status pode ser complicado. Felizmente, existem organizações que podem
             fornecer assistência. A Amariconelli pode ajudá-lo a entender os diferentes tipos de vistos e os requisitos
@@ -28,7 +28,7 @@
       <div class="col-md-10">
         <div class="text-center">
           <h3>Tipos de petições mais comuns:</h3>
-          <ul>
+          <ul style="line-height: 1.5;">
             <li>Petição para noivo(a) estrangeiro(a)</li>
             <li>Petição para parente estrangeiro</li>
             <li>Pedido de Documento de Viagem</li>

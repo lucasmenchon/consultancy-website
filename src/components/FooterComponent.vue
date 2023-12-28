@@ -10,83 +10,62 @@
                     <!--Grid row-->
                     <div class="row">
 
-                        <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Fale Conosco</h6>
                             <!-- <p><i class="fas fa-home mr-3"></i> Cidade, Estado CEP, Pais</p> -->
                             <p>
-                                <i class="fas fa-envelope me-2" style="color: #3b5998;"></i>
                                 <a href="mailto:amariconelli@hotmail.com" class="text-decoration-none"
-                                    style="color: #3b5998;">amariconelli@hotmail.com</a>
-                            </p>
-                            <p>
-                                <i class="fas fa-phone me-2" style="color: #3b5998;"></i>
-                                <a href="tel:+5511975528024" class="text-decoration-none" style="color: #000;">(11)
-                                    97552-8024</a>
-                            </p>
-                            <p>
-                                <i class="fab fa-whatsapp me-2" style="font-size: 22px;color:forestgreen;"></i>
-                                <a href="tel:+5511975528024" class="text-decoration-none" style="color: forestgreen;">(11)
-                                    97552-8024</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-
-
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Menu</h6>
-                            <router-link to="/" class="text-decoration-none">
-                                <p class="mb-1 link-hover">Home</p>
-                            </router-link>
-                            <router-link to="/about" class="text-decoration-none">
-                                <p class="mb-1 link-hover">Sobre</p>
-                            </router-link>
-                            <router-link to="/contact" class="text-decoration-none">
-                                <p class="mb-1 link-hover">Contato</p>
-                            </router-link>
-                        </div>
-
-
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 mb-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Siga-nos</h6>
-
-                            <!-- Facebook -->
-                            <a class="btn btn-primary btn-floating m-1"
-                                style="background-color: #0866FF; border: none; display: inline-block; width: 126px; text-decoration: none; color: white;"
-                                href="#!" role="button">
-                                <i class="fab fa-facebook-f" style="margin-right: 5px;"></i>Facebook
-                            </a>
-
-                            <!-- Instagram -->
-                            <a class="btn btn-primary m-1"
-                                style="background-color: #000; border: none; display: inline-block; width: 126px;text-decoration: none; color: white;"
-                                href="#!">
-                                <i class="fab fa-instagram" style="margin-right: 5px;"></i>Instagram
-                            </a>
-                        </div>
-
-                        <!-- Grid column -->
-                        <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                <a class="navbar-brand me-auto">
-                                    <img class="logo" src="../assets/logo.png" style="width: 180px; height: auto;">
+                                    style="color: #3b5998;">
+                                    <i class="fas fa-envelope me-1" style="color: #3b5998;"></i> amariconelli@hotmail.com
                                 </a>
-                            </h6>                            
-                        </div> -->
-                        <!-- Grid column -->
+                            </p>
+                            <p>
+                                <a href="tel:+5511976917787" class="text-decoration-none" style="color: #000;">
+                                    <i class="fas fa-phone me-1" style="color: #3b5998;"></i> (11) 97552-8024</a>
+                            </p>
+                            <p>
+                                <a href="https://wa.me/message/L57OUXXHQ6VUB1" class="text-decoration-none"
+                                    style="color: forestgreen;" target="_blank">
+                                    <i class="fab fa-whatsapp me-1" style="font-size: 20px;color:forestgreen;"></i> (11)
+                                    97552-8024</a>
+                            </p>
+                        </div>
 
+                        <div class="col-md-4 mt-3 d-flex justify-content-center">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                    <img src="../assets/brazil.svg" alt="Ícone Brasil" style="width: 50px; height: 50px;">
+                                    <p style="font-size: 10px; text-align: center; margin-top: 5px;">
+                                        Atendimento para todo o Brasil
+                                    </p>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                    <img src="../assets/lock.svg" alt="Ícone de Cadeado" style="width: 50px; height: 50px;">
+                                    <p style="font-size: 10px; text-align: center; margin-top: 5px;">
+                                        Segurança máxima
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 mb-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">redes sociais, Siga-nos</h6>
+
+                            <div>
+                                <a href="https://www.facebook.com/amariconelli" target="_blank" style="margin-right: 25px;">
+                                    <i class="fab fa-facebook-square" style="font-size: 30px;"></i>
+                                </a>
+                                <a href="https://www.instagram.com/amariconelli_/" target="_blank"
+                                    style="margin-right: 25px;">
+                                    <i class="fab fa-instagram instagram-icon" style="font-size: 30px;"></i>
+                                </a>
+                                <a href="https://wa.me/message/L57OUXXHQ6VUB1" target="_blank">
+                                    <i class="fab fa-whatsapp" style="font-size: 30px;color: #1CBD3C;"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <!--Grid row-->
 
@@ -106,6 +85,13 @@
     <!-- End of .container -->
 </template>
 <style scoped>
+.instagram-icon {
+    font-size: 30px;
+    background: linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .link-hover {
     color: #3b5998;
     /* Cor do texto inicial */
