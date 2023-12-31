@@ -15,23 +15,15 @@
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;  
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  min-height: 100vh;
 }
 
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
-
 .slide-fade-leave-active {
-  transform-origin: top;
-  transform: translateY(-100%);
-  opacity: 0;
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,
@@ -50,6 +42,14 @@ export default {
   components: {
     FooterComponent,
     NavbarComponent
+  },
+  created() {
+    // Ao mudar de rota, a página será movida para o topo se estiver rolando para baixo
+    this.$router.afterEach(() => {
+      if (window.scrollY > 0) {
+        window.scrollTo(0, 0);
+      }
+    })
   }
 }
 

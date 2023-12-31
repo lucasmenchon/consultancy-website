@@ -1,11 +1,10 @@
 <template>
-  <br />
-  <div class="container mt-5">
+  <div class="container" style="padding-top: 80px;">
     <div class="row justify-content-center">
-      <div class="col-md-10">
+      <div class="col-md-10" >
         <div class="text-center">
-          <h3 class="mb-4">Sobre</h3>
-          <p style="line-height: 2;">
+          <h3>Sobre</h3>
+          <p style="line-height: 2;text-align: justify;">
             Se você é um imigrante nos Estados Unidos ou pretende residir na Americana, existem muitos tipos diferentes de
             vistos, e o processo de mudança de status pode ser complicado. Felizmente, existem organizações que podem
             fornecer assistência. A Amariconelli pode ajudá-lo a entender os diferentes tipos de vistos e os requisitos
@@ -28,7 +27,7 @@
       <div class="col-md-10">
         <div class="text-center">
           <h3>Tipos de petições mais comuns:</h3>
-          <ul style="line-height: 1.5;">
+          <ul style="line-height: 1.5; text-align: center;list-style-position: inside; margin: 0;">
             <li>Petição para noivo(a) estrangeiro(a)</li>
             <li>Petição para parente estrangeiro</li>
             <li>Pedido de Documento de Viagem</li>
@@ -44,20 +43,6 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-/* Estilo para justificar o texto */
-p {
-  text-align: justify;
-}
-
-/* Centralizar textos na lista */
-ul {
-  text-align: center;
-  list-style-position: inside;
-}
-</style>
-
 <script>
 
 export default {

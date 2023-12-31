@@ -1,10 +1,9 @@
 <template>
   <BannerImageComponent />
-  <br />
   <div class="container">
     <div class="row">
       <div class="col">
-        <h3 class="text-center">Na Amariconelli</h3>
+        <h3 class="text-center mt-2">Na Amariconelli</h3>
         <p class="text-justify">
           nós simplificamos seu processo de solicitação. Sem filas de espera e preços que cabem no seu bolso para emitir
           ou renovar seu Visto Americano. Veja abaixo os vistos que trabalhamos!
@@ -25,7 +24,7 @@
                 do
                 processo, como por exemplo: preenchimento de formulários, cadastro, orientações e pagamento de taxas.
               </p>
-              <a href="#" class="mt-auto btn btn-primary align-self-end">Saiba mais</a>
+              <router-link :to="{ name: 'b1&b2' }" class="mt-auto btn btn-primary align-self-end">Saiba mais</router-link>
             </div>
           </div>
         </div>
@@ -40,7 +39,7 @@
                 Auxiliamos em todo o processo do visto de estudante F1, cuidando de todas as etapas do processo, como por
                 exemplo: preenchimento de formulários, cadastro, orientações e pagamento de taxas.
               </p>
-              <a href="#" class="mt-auto btn btn-primary align-self-end">Saiba mais</a>
+              <router-link :to="{ name: 'f1&m1' }" class="mt-auto btn btn-primary align-self-end">Saiba mais</router-link>
             </div>
           </div>
         </div>
@@ -54,13 +53,13 @@
                 Auxiliamos no seu Visto de Trabalho nos EUA, cuidando das etapas do seu processo, desde a elegibilidade
                 até a preparação da documentação, garantindo uma experiência fluida e ágil aumentando suas chances.
               </p>
-              <a href="#" class="mt-auto btn btn-primary align-self-end">Saiba mais</a>
+              <router-link :to="{ name: 'work' }" class="mt-auto btn btn-primary align-self-end">Saiba mais</router-link>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <!-- Card 3 - EB4 - Religiosos -->
+        
         <div class="col-md-4 mb-4">
           <div class="card" style="width: auto; height: 100%;">
             <img src="../assets/mormon.jpg" class="card-img-top" alt="">
@@ -70,11 +69,11 @@
                 Auxiliamos na sua solicitação para o Visto Religioso, avaliando sua elegibilidade e intenções para exercer
                 atividades religiosas nos EUA.
               </p>
-              <a href="#" class="mt-auto btn btn-primary align-self-end">Saiba mais</a>
+              <router-link :to="{ name: 'eb4' }" class="mt-auto btn btn-primary align-self-end">Saiba mais</router-link>
             </div>
           </div>
         </div>
-        <!-- Card 4 - Petições -->
+       
         <div class="col-md-4 mb-4">
           <div class="card" style="width: auto; height: 100%;">
             <img src="../assets/petition.jpg" class="card-img-top" alt="">
@@ -84,11 +83,11 @@
                 Auxiliamos no seu pedido de Petição, cuidando do seu processo, desde a elegibilidade até a preparação da
                 documentação, garantindo uma experiência fluida e ágil aumentando suas chances.
               </p>
-              <a href="#" class="mt-auto btn btn-primary align-self-end">Saiba mais</a>
+              <router-link :to="{ name: 'petitions' }" class="mt-auto btn btn-primary align-self-end">Saiba mais</router-link>
             </div>
           </div>
         </div>
-        <!-- Card 5 - Antecipação de Entrevista -->
+        
         <div class="col-md-4 mb-4">
           <div class="card" style="width: auto; height: 100%;">
             <img src="../assets/antecipation.jpg" class="card-img-top" alt="">
@@ -98,14 +97,12 @@
                 Monitoramos 24 horas por dia e 7 dias por semana o calendário do consulado americano com o objetivo de
                 encontrar a data mais próxima para a sua entrevista.
               </p>
-              <a href="#" class="mt-auto btn btn-primary align-self-end">Saiba mais</a>
+              <router-link :to="{ name: 'antecipation' }" class="mt-auto btn btn-primary align-self-end">Saiba mais</router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
     <div class="row mt-4">
       <div class="col-md-6 mb-3 d-flex align-items-stretch">
         <div class="card h-100">
@@ -153,6 +150,11 @@ import BannerImageComponent from '@/components/BannerImageComponent.vue'
 
 export default {
   name: 'HomeView',
+  data() {
+    return {
+      //routes: this.$router.getRoutes(),     
+    }
+  },
   components: {
     BannerImageComponent
   }

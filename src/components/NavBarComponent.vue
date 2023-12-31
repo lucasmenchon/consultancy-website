@@ -8,13 +8,10 @@
                 aria-controls="navbarText" @click="toggleMenu">
                 <i :class="iconClasses"></i>
             </button>
-            <!-- <button class="navbar-toggler" type="button" @click="toggleMenu" aria-controls="navbarText"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <i :class="iconClasses"></i>
-            </button> -->
+
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item me-4" v-for="route in routes" :key="route.path">
+                    <li class="nav-item me-4" v-for="route in visibleRoutes" :key="route.path">
                         <router-link class="nav-link" :to="route.path" :class="{ 'active': isActive(route) }">{{
                             capitalizeFirstLetter(route.name) }}</router-link>
                     </li>
@@ -37,7 +34,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
-    padding: 0;
+    padding: 0px;
 }
 
 .navbar a {
@@ -141,7 +138,10 @@ export default {
                 'icon': true,
                 'animating': this.isAnimating
             };
-        }
+        },
+        visibleRoutes() {
+            return this.$router.options.routes.filter(route => !route.meta || !route.meta.hideInNavbar);
+        },
     },
     watch: {
         $route(newVal) {
@@ -149,6 +149,13 @@ export default {
         }
     },
     methods: {
+        scrollToTop() {
+            // Rolagem suave para o topo da página
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        },
         capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
         },
@@ -161,6 +168,7 @@ export default {
     },
     mounted() {
         this.activeRoute = this.$route.path;
+        this.scrollToTop()
     }
 }
 </script>
