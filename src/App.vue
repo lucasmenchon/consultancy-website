@@ -15,13 +15,13 @@
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   min-height: 100vh;
 }
 
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
+
 .slide-fade-leave-active {
   transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
 }
@@ -52,5 +52,4 @@ export default {
     })
   }
 }
-
 </script>

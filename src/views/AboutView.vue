@@ -45,8 +45,7 @@
 </template>
 <script>
 
-export default {
-  name: 'AboutView',
+export default { 
   components: {
 
   }

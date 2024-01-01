@@ -1,6 +1,6 @@
 <template>
   <BannerImageComponent />
-  <div class="container">
+  <div class="container" style="text-align: center;">
     <div class="row">
       <div class="col">
         <h3 class="text-center mt-2">Na Amariconelli</h3>
@@ -18,7 +18,7 @@
           <div class="card" style="width: auto; height: 100%;">
             <img src="../assets/tourism.jpg" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">B1-B2 - Turista/Negócios</h5>
+              <h6 class="card-title">B1-B2 - Turista/Negócios</h6>
               <p class="card-text" style="text-align: center; font-size: 14px;">
                 Elaboramos sua solicitação cuidadosamente para o Visto de Turismo e Negócios cuidando de todas as etapas
                 do
@@ -34,7 +34,7 @@
           <div class="card" style="width: auto; height: 100%;">
             <img src="../assets/student.jpg" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">F1/M1 - Estudante (Curso de Inglês - acadêmico ou vocacionais)</h5>
+              <h6 class="card-title">F1/M1 - Estudante (Curso de Inglês - acadêmico ou vocacionais)</h6>
               <p class="card-text" style="text-align: center; font-size: 14px;">
                 Auxiliamos em todo o processo do visto de estudante F1, cuidando de todas as etapas do processo, como por
                 exemplo: preenchimento de formulários, cadastro, orientações e pagamento de taxas.
@@ -48,7 +48,7 @@
           <div class="card" style="width: auto; height: 100%;">
             <img src="../assets/work.jpg" class="card-img-top" alt="">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Trabalho</h5>
+              <h6 class="card-title">Trabalho</h6>
               <p class="card-text" style="text-align: center; font-size: 14px;">
                 Auxiliamos no seu Visto de Trabalho nos EUA, cuidando das etapas do seu processo, desde a elegibilidade
                 até a preparação da documentação, garantindo uma experiência fluida e ágil aumentando suas chances.
@@ -148,8 +148,7 @@
 <script>
 import BannerImageComponent from '@/components/BannerImageComponent.vue'
 
-export default {
-  name: 'HomeView',
+export default {  
   data() {
     return {
       //routes: this.$router.getRoutes(),     

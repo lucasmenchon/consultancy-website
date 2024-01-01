@@ -1,5 +1,5 @@
 <template>
-  <div class="container" style="padding-top: 80px;">
+  <div class="container" style="padding-top: 80px;text-align: center;">
     <h3>Fale Conosco</h3>
     <div class="row justify-content-center">
       <div class="col-lg-6">
@@ -24,6 +24,10 @@
             <textarea class="form-control background-input" id="mensagem" rows="5" placeholder="Mensagem"
               v-model="formData.message" name="user_message"></textarea>
           </div>
+          <div class="mb-3">
+            <div class="g-recaptcha" data-sitekey="6Lfsf0IpAAAAAChw_n91KgE33ng7tpUWAV3JQWfK"></div>
+          </div>
+
           <input type="submit" class="btn btn-primary" value="Enviar">
         </form>
       </div>
@@ -44,7 +48,8 @@
         </div>
       </div>
       <div class="mt-5 centralizado">
-        <b>Esclarecimento legal:</b> Amariconelli é uma empresa que fornece suporte a procedimentos de viagem. O preço de nossos
+        <b>Esclarecimento legal:</b> Amariconelli é uma empresa que fornece suporte a procedimentos de viagem. O preço de
+        nossos
         serviços inclui assistência profissional para facilitar o processo de obtenção da autorização para entrada nos
         Estados Unidos. Este site e seus serviços não são afiliados aos EUA. A decisão final fica exclusivamente a cargo
         das autoridades governamentais.
@@ -79,7 +84,6 @@ import emailjs from '@emailjs/browser';
 import { mask } from 'vue-the-mask'
 
 export default {
-  name: 'ContactView',
   data() {
     return {
       formData: {

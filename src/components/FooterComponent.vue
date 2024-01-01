@@ -5,7 +5,7 @@
             <section class="row justify-content-around pt-4 pb-4 pe-0 ps-0" style="padding: 0;">
                 <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Esclarecimento Legal</h6>
-                    <div style="text-align: justify;">
+                    <div style="text-align: justify;font-size: 14px;">
                         Amariconelli é uma empresa que fornece suporte a procedimentos de viagem. O
                         preço de nossos serviços inclui assistência profissional para facilitar o processo de obtenção da
                         autorização para entrada nos Estados Unidos. Este site e seus serviços não são afiliados aos EUA. A
