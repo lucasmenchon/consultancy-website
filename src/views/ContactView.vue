@@ -3,7 +3,7 @@
     <h3>Fale Conosco</h3>
     <div class="row justify-content-center">
       <div class="col-lg-6">
-        <form ref="form" @submit.prevent="" class="form-control mb-2">
+        <form ref="form" @submit.prevent="sendEmail" class="form-control mb-2">
           <div class="mb-3">
             <label for="name" class="form-label">Nome*</label>
             <input type="text" class="form-control background-input" id="name" placeholder="Seu Nome"

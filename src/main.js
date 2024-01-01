@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import mainRouter from '@/router'; // Importando o router principal
+import mainRouter from './router';
 
 createApp(App)
-  .use(mainRouter) // Usando o router principal
+  .use(mainRouter)
   .mount('#app');
