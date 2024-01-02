@@ -3,8 +3,8 @@
         <h3 class="text-center">EB4 - (Religiosos)</h3>
         <div class="d-flex justify-content-center">
             <div style="max-width: 800px; text-align: justify;">
-               
-                <div class="container">                   
+
+                <div class="container">
                     <p>Poderão solicitar o visto religioso para os EUA as pessoas com ocupações ligadas diretamente a
                         igrejas.</p>
                     <p>Para se qualificar para um visto de trabalho religioso (R), os pastores e/ou trabalhadores religiosos
@@ -19,7 +19,7 @@
                             para uma organização legítima afiliada a uma denominação religiosa;</li>
                     </ul>
                 </div>
-               
+
             </div>
         </div>
         <div class="buttons-container mt-4">
@@ -47,8 +47,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center mb-3">
+
             <div class="col-md-4">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
@@ -63,8 +62,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
+
             <div class="col-md-4">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
@@ -89,7 +87,8 @@ export default {
 }
 </script>
   
-<style scoped>.buttons-container {
+<style scoped>
+.buttons-container {
     display: flex;
     justify-content: center;
     gap: 20px;

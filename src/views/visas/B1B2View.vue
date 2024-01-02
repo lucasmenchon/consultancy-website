@@ -1,8 +1,8 @@
 <template>
   <div class="container" style="padding-top: 80px;">
     <h3 class="text-center">B1/B2 - Turista/Negócios</h3>
-    <div class="d-flex justify-content-center">      
-      <div style="max-width: 800px; text-align: justify;">        
+    <div class="d-flex justify-content-center">
+      <div style="max-width: 800px; text-align: justify;">
         <p style="line-height: 2;text-align: justify;">
           O visto para os EUA de turismo e negócios é destinado às pessoas que queiram ir aos Estados Unidos para passear,
           turismo, visita a parentes ou fazer negócios em solo americano. Quanto mais vínculos você tiver no Brasil,
@@ -34,12 +34,11 @@
               <h5 class="card-title fw-bold">Personalização Sob Medida</h5>
               <p class="card-text fs-6">Estratégias adaptadas de acordo com suas necessidades específicas</p>
             </div>
-            <div></div> <!-- Espaço em branco caso o texto termine -->
+            <div></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row justify-content-center">
+
       <div class="col-md-4">
         <div class="card text-center h-100 d-flex flex-column justify-content-between">
           <div class="card-body">
@@ -50,7 +49,7 @@
               <h5 class="card-title fw-bold">Segurança na Documentação</h5>
               <p class="card-text fs-6">Deixe toda a burocracia relacionada à documentação conosco.</p>
             </div>
-            <div></div> <!-- Espaço em branco caso o texto termine -->
+            <div></div>
           </div>
         </div>
       </div>

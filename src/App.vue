@@ -15,7 +15,7 @@
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
+   min-height: 100vh;
 }
 
 .slide-fade-enter-active {

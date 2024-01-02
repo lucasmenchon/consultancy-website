@@ -2,7 +2,7 @@
     <div class="container" style="padding-top: 80px;">
         <h3 class="text-center">F1/M1 - Estudante (Curso de Inglês - acadêmico ou vocacionais)</h3>
         <div class="d-flex justify-content-center">
-            <div style="max-width: 800px; text-align: justify;">                
+            <div style="max-width: 800px; text-align: justify;">
                 <p style="line-height: 2;text-align: justify;">
                     O visto F1 é o mais comum para quem quer estudar nos Estados Unidos. Se você quer estudar em curso de
                     graduação em uma Universidade Americana, fazer curso de inglês em uma instituição desse tipo ou
@@ -35,12 +35,10 @@
                             <h5 class="card-title fw-bold">Personalização Sob Medida</h5>
                             <p class="card-text fs-6">Estratégias adaptadas de acordo com suas necessidades específicas</p>
                         </div>
-                        <div></div> <!-- Espaço em branco caso o texto termine -->
+                        <div></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">

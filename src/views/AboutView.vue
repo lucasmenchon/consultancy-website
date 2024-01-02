@@ -23,24 +23,6 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-10">
-        <div class="text-center">
-          <h3>Tipos de petições mais comuns:</h3>
-          <ul style="line-height: 1.5; text-align: center;list-style-position: inside; margin: 0;">
-            <li>Petição para noivo(a) estrangeiro(a)</li>
-            <li>Petição para parente estrangeiro</li>
-            <li>Pedido de Documento de Viagem</li>
-            <li>Petição de Imigrante para Trabalhadores Estrangeiros</li>
-            <li>Requerimento para Registro de Residência Permanente ou Ajuste de Status</li>
-            <li>Pedido de Extensão/Mudança de Status de Não Imigrante</li>
-            <li>Pedido de Asilo e Retenção de Remoção</li>
-            <li>Pedido de Autorização de Trabalho</li>
-            <li>Pedido de Naturalização</li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 <script>

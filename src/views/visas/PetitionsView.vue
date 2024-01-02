@@ -15,6 +15,24 @@
                 </p>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="text-center">
+                    <h3>Tipos de petições mais comuns:</h3>
+                    <ul style="line-height: 1.5; text-align: center;list-style-position: inside; margin: 0;">
+                        <li>Petição para noivo(a) estrangeiro(a)</li>
+                        <li>Petição para parente estrangeiro</li>
+                        <li>Pedido de Documento de Viagem</li>
+                        <li>Petição de Imigrante para Trabalhadores Estrangeiros</li>
+                        <li>Requerimento para Registro de Residência Permanente ou Ajuste de Status</li>
+                        <li>Pedido de Extensão/Mudança de Status de Não Imigrante</li>
+                        <li>Pedido de Asilo e Retenção de Remoção</li>
+                        <li>Pedido de Autorização de Trabalho</li>
+                        <li>Pedido de Naturalização</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="buttons-container mt-4">
             <div class="buttons-container">
                 <a class="btn btn-success" href="https://wa.me/message/L57OUXXHQ6VUB1" target="_blank">
@@ -26,7 +44,7 @@
             </div>
         </div>
         <div class="row justify-content-center mt-5 mb-3">
-            <div class="col-md-4">
+            <div class="col-md-4 mt-2">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
                         <div class="mb-3">
@@ -36,13 +54,12 @@
                             <h5 class="card-title fw-bold">Personalização Sob Medida</h5>
                             <p class="card-text fs-6">Estratégias adaptadas de acordo com suas necessidades específicas</p>
                         </div>
-                        <div></div> <!-- Espaço em branco caso o texto termine -->
+                        <div></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-            <div class="col-md-4">
+
+            <div class="col-md-4 mt-2">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
                         <div class="mb-3">
@@ -57,9 +74,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-4">
+
+            <div class="col-md-4 mt-2">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
                         <div class="mb-3">
@@ -69,7 +85,7 @@
                             <h5 class="card-title fw-bold">Segurança na Documentação</h5>
                             <p class="card-text fs-6">Deixe toda a burocracia relacionada à documentação conosco.</p>
                         </div>
-                        <div></div> <!-- Espaço em branco caso o texto termine -->
+                        <div></div>
                     </div>
                 </div>
             </div>

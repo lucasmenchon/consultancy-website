@@ -37,12 +37,10 @@
                             <h5 class="card-title fw-bold">Personalização Sob Medida</h5>
                             <p class="card-text fs-6">Estratégias adaptadas de acordo com suas necessidades específicas</p>
                         </div>
-                        <div></div> <!-- Espaço em branco caso o texto termine -->
+                        <div></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center mb-3">
             <div class="col-md-4">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
@@ -51,15 +49,13 @@
                         </div>
                         <div class="mb-4">
                             <h5 class="card-title fw-bold">Atualização Constante</h5>
-                            <p class="card-text fs-6">Mantenha-se atualizado com as últimas regulamentações e evite imprevistos
-                            </p>
+                            <p class="card-text fs-6">Mantenha-se atualizado com as últimas regulamentações e evite
+                                imprevistos</p>
                         </div>
                         <div></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card text-center h-100 d-flex flex-column justify-content-between">
                     <div class="card-body">
@@ -70,7 +66,7 @@
                             <h5 class="card-title fw-bold">Segurança na Documentação</h5>
                             <p class="card-text fs-6">Deixe toda a burocracia relacionada à documentação conosco.</p>
                         </div>
-                        <div></div> <!-- Espaço em branco caso o texto termine -->
+                        <div></div>
                     </div>
                 </div>
             </div>
