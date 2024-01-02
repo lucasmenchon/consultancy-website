@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
@@ -20,7 +20,6 @@ const routes = [
     name: "sobre",
     component: AboutView,
   },
-
   {
     path: "/contact",
     name: "Contato",
@@ -53,31 +52,31 @@ const routes = [
   {
     path: "/visas/work",
     name: "work",
-    component: WorkView, 
+    component: WorkView,
     meta: {
-      hideInNavbar: true, 
+      hideInNavbar: true,
     },
   },
   {
     path: "/visas/petitions",
     name: "petitions",
-    component: PetitionsView, 
+    component: PetitionsView,
     meta: {
-      hideInNavbar: true, 
+      hideInNavbar: true,
     },
   },
   {
     path: "/visas/antecipation",
     name: "antecipation",
-    component: AntecipationView, 
+    component: AntecipationView,
     meta: {
-      hideInNavbar: true, 
+      hideInNavbar: true,
     },
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 });
 

@@ -25,10 +25,20 @@
               v-model="formData.message" name="user_message"></textarea>
           </div>
           <div class="mb-3">
-            <div class="g-recaptcha" data-sitekey="6Lfsf0IpAAAAAChw_n91KgE33ng7tpUWAV3JQWfK"></div>
+            <div id="g-recaptcha"></div>
           </div>
-
-          <input type="submit" class="btn btn-primary" value="Enviar">
+          <div style="display: flex; align-items: center;">
+            <button type="submit" class="btn btn-success" :disabled="sendFormData.btnLoading"
+              style="display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+              <span style="display: flex; align-items: center;">
+                Enviar
+                <dotlottie-player v-show="sendFormData.btnLoading"
+                  src="https://lottie.host/eb090258-ff6e-4cd1-b636-22c14a27ad07/N3iPp3HwlT.json" background="transparent"
+                  speed="1" style="width: 25px; height: 20px; margin-left: 5px;" loop autoplay></dotlottie-player>
+              </span>
+            </button>
+            <span>{{ sendFormData.message }}</span>
+          </div>
         </form>
       </div>
       <div class="row justify-content-center mt-5">
@@ -70,7 +80,6 @@
   text-align: justify;
   margin: 0 auto;
   max-width: 800px;
-  /* Define a largura máxima para centralizar o texto */
 }
 
 .background-input {
@@ -91,7 +100,12 @@ export default {
         email: '',
         phone: '',
         message: ''
-      }
+      },
+      sendFormData: {
+        btnLoading: false,
+        isRecaptchaRendered: false,
+        message:'',
+      },
     };
   },
   computed: {
@@ -103,13 +117,32 @@ export default {
   directives: { mask },
   methods: {
     sendEmail() {
+      this.sendFormData.btnLoading = true;
       emailjs.sendForm('service_99qub15', 'template_l3cj23p', this.$refs.form, 'xAy7NnpOGrrgTtrbx')
         .then((result) => {
-          console.log('SUCCESS!', result.text);
+          result
+          this.sendFormData.message = 'Mensagem enviada!'
         }, (error) => {
-          console.log('FAILED...', error.text);
+          error
+          this.sendFormData.message = 'Erro ao enviar!'
+        })
+        .finally(() => {
+          this.sendFormData.btnLoading = false;
         });
+    },
+    loadRecaptcha() {
+      if (typeof window.grecaptcha.render !== 'undefined' && !this.sendFormData.isRecaptchaRendered) {
+        window.grecaptcha.render('g-recaptcha', {
+          sitekey: '6Lfsf0IpAAAAAChw_n91KgE33ng7tpUWAV3JQWfK'
+        });
+        this.sendFormData.isRecaptchaRendered = true;
+      } else {
+        setTimeout(this.loadRecaptcha, 100);
+      }
     }
   },
+  mounted() {
+    this.loadRecaptcha();
+  }
 }
 </script>

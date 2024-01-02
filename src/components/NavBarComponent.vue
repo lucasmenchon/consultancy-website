@@ -21,8 +21,8 @@
     </nav>
     <div class="position-fixed top-50 end-0 translate-middle-y" style="z-index: 9999; margin-right: 5px; margin-top: 60px;">
         <a href="https://wa.me/message/L57OUXXHQ6VUB1" target="_blank">
-            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_dyf5lscb.json" speed="1.20"
-                style="width: 38px; height: 40px;" loop autoplay background="transparent"></lottie-player>
+            <dotlottie-player src="https://lottie.host/bda53353-e7da-4cf2-9dcb-ed2088f0d24d/h40nAQu0q7.json"
+                background="transparent" speed="1" style="width: 38px; height: 40px;" loop autoplay></dotlottie-player>
         </a>
     </div>
 </template>
