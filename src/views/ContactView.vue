@@ -29,15 +29,15 @@
           </div>
           <div style="display: flex; align-items: center;">
             <button type="submit" class="btn btn-success" :disabled="sendFormData.btnLoading"
-              style="display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+              style="display: flex; align-items: center; justify-content: center;margin-right: 5px;">
               <span style="display: flex; align-items: center;">
                 Enviar
-                <dotlottie-player v-show="sendFormData.btnLoading"
-                  src="https://lottie.host/eb090258-ff6e-4cd1-b636-22c14a27ad07/N3iPp3HwlT.json" background="transparent"
-                  speed="1" style="width: 25px; height: 20px; margin-left: 5px;" loop autoplay></dotlottie-player>
               </span>
             </button>
-            <span>{{ sendFormData.message }}</span>
+            <dotlottie-player v-show="sendFormData.btnLoading"
+              src="https://lottie.host/5494671a-e571-494c-a66b-c4cb384ccd4e/h09Ni1bJma.json" background="transparent"
+              speed="1" style="width: 25px; height: 20px;" loop autoplay></dotlottie-player>
+            <span v-html="sendFormData.message"></span>
           </div>
         </form>
       </div>
@@ -104,7 +104,7 @@ export default {
       sendFormData: {
         btnLoading: false,
         isRecaptchaRendered: false,
-        message:'',
+        message: '',
       },
     };
   },
@@ -119,16 +119,20 @@ export default {
     sendEmail() {
       this.sendFormData.btnLoading = true;
       emailjs.sendForm('service_99qub15', 'template_l3cj23p', this.$refs.form, 'xAy7NnpOGrrgTtrbx')
-        .then((result) => {
-          result
-          this.sendFormData.message = 'Mensagem enviada!'
-        }, (error) => {
-          error
-          this.sendFormData.message = 'Erro ao enviar!'
+        .then(() => {
+          this.sendFormData.message = "<span style='color: green'>Mensagem enviada!</span>";
+          setTimeout(() => {
+            this.sendFormData.message = "";
+          }, 4000);
+        }, () => {
+          this.sendFormData.message = "<span style='color: red'>Erro ao enviar!</span>";
+          setTimeout(() => {
+            this.sendFormData.message = "";
+          }, 4000);
         })
         .finally(() => {
           this.sendFormData.btnLoading = false;
-        });
+        })
     },
     loadRecaptcha() {
       if (typeof window.grecaptcha.render !== 'undefined' && !this.sendFormData.isRecaptchaRendered) {
@@ -137,7 +141,7 @@ export default {
         });
         this.sendFormData.isRecaptchaRendered = true;
       } else {
-        setTimeout(this.loadRecaptcha, 100);
+        setTimeout(this.loadRecaptcha, 1000);
       }
     }
   },
