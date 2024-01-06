@@ -15,8 +15,8 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Fale Conosco</h6>
                     <p class="mb-2">
-                        <a href="mailto:amariconelli@hotmail.com" class="link-hover">
-                            <i class="fas fa-envelope me-1" style="color: #3b5998;"></i> amariconelli@hotmail.com
+                        <a href="mailto:contato@amariconelli.com" class="link-hover">
+                            <i class="fas fa-envelope me-1" style="color: #3b5998;"></i> contato@amariconelli.com
                         </a>
                     </p>
                     <p class="mb-2">

@@ -1,7 +1,7 @@
 
 npm run build && ^
 cd .\dist && ^
-echo amariconelli.luccas.dev > CNAME && ^
+REM echo amariconelli.com > CNAME && ^
 git init && ^
 git add -A && ^
 git commit -m "deploy in .bat file" && ^
